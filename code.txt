@@ -1,3 +1,4 @@
+//EXAMPLE CODE
 package q11087;
 
 public class CompareArrays {
