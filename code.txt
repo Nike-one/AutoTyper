@@ -1,0 +1,28 @@
+package q11087;
+
+public class CompareArrays {
+	/**
+	 * Compute the difference between two arrays
+	 *
+	 * Find the count of elements which have difference less than 2 and greater than -2
+	 *
+	 *
+	 *
+	 * @return count
+	 */
+
+	public int compare(int[] arr1, int[] arr2) {
+		//Write your code here
+		int arr[]= new int [arr1.length];
+		for(int i =0;i<arr1.length;i++){
+			arr[i]=arr1[i]-arr2[i];
+		}
+		int c = 0;
+		for(int i =0 ;i<arr.length;i++){
+			if(arr[i]>-2&&arr[i]<2){
+				c++;
+			}
+		}
+		return c;
+	}
+}
